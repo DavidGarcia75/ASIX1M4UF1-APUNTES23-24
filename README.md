@@ -1,7 +1,7 @@
 # ASIX1M4UF1-APUNTES23-24
 
 
-# MARKDOWN (APUNTES)
+## MARKDOWN (APUNTES)
 (#) <----- Sirve para hacer encabezados hay 6 niveles.
 
 Este texto esta en *cursiva*
@@ -48,7 +48,7 @@ Hay que dejar un espacio en blanco para que siga en otra linea
 
 [Esto es un enlace](http://joan23.fje.edu "Enlace a la web del cole")
 
-[Esto es una imagen del planeta](download "Titulo Opcional de la imagen")
+[Esto es una imagen del planeta]( https://shre.ink/nvEs  "Titulo Opcional de la imagen")
 
 Primera Col.|Segunda Col.|3 Col|
 |---------------|:------------:|---------|
@@ -64,7 +64,7 @@ Primera Col.|Segunda Col.|3 Col|
 -[] Opcion C
 
 ## Segundo Capitulo: HTML (APUNTES)
-## HTML
+### HTML
 ```
 Etiquetas de apertura y de cierre
 apertura --> <p>  contenido visible </p> <-- cierre
@@ -76,6 +76,27 @@ Anidar Etiquetas: Meter una etiqueta dentro de otra
 <img href="./imagen">sirve para insertar una imagen
 
 <br> sirve para dejar un espacio en blanco entre lineas
+
+<html lang="idioma deseado">
+
+<meta charset="UTF-8"> se encarga de que por ejemplo caracteres especiales como podria ser la ñ puedan ser renderizados por el codigo
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> se encarga de configurar como se va a ver la pagina web en la pantalla
+
+<title>Document</title> Es el titulo de la pagina web 
+
+<h1></h1> Define un encabezado tiene 6 niveles
 `````
+-Cuerpo (body) Aqui se pone todo el contenido de la pagina visible por los visitantes de la pagina web
 
 
+-Encabezado (head) Contenido no visible para los visitantes de la pagina,normalmente es donde definimos las caracteristicas de la pagina
+
+Cada nuevo archivo que abras en Visual Studio tienes que especificar que lenguaje vas a utilizar, en caso de html le daremos a nuevo archivo y escribiremos html:5
+
+Hay dos categorias de etiquetas:
+-Etiquetas De Bloque
+Algunos ejemplos pueden ser titulo,parrafo,listas,tablas.
+
+-Etiquetas De Linea:
+Cuando se acaba de renderizar la etiqueta deja un salto de linea
