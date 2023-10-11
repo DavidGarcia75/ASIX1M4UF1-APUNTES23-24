@@ -100,3 +100,19 @@ Algunos ejemplos pueden ser titulo,parrafo,listas,tablas.
 
 -Etiquetas De Linea:
 Cuando se acaba de renderizar la etiqueta deja un salto de linea
+
+<ol> -> lista ordenada (cada elemento que este en la lista esta anidado en un li (item list))
+
+<ol>
+<li> Primer elemento</li>
+<li> Segundo elemento</li>
+<li> Tercer elemento</li>
+</ol>
+
+ul-> lista desordenada (solo varia el formato)
+
+<ul>
+<li> Primer elemento</li>
+<li> Segundo elemento</li>
+<li> Tercer elemento</li>
+</ul>
