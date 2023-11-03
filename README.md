@@ -3,6 +3,104 @@
 ## GITHUB
 <hr>
 ## MARKDOWN 
+-¿Que és?
+
+Markdown es un lenguaje de marcado que pretende ofrecer la máxima facilidad de lectura al usuario. Sus comandos de formateado no son abstractos, sino cercanos al significado real. 
+<br>
+<h3>Negritas y Cursivas</h3>
+Crear negritas y cursivas con Markdown es particularmente fácil, ya que solo son necesarios los asteriscos. Para poner una palabra o grupo de palabras en cursiva, inserta un asterisco antes y después de ellas. Para la negrita, utiliza dos. Si deseas remarcar un área de texto en negrita y cursiva, pon tres asteriscos. Como alternativa, también puedes utilizar guiones bajos.
+
+```
+*Texto en cursiva*
+_Texto en cursiva_
+
+**Texto en negrita**
+__Texto en negrita__
+
+***Texto en cursiva y negrita***
+___Texto en cursiva y negrita___
+```
+<h3>Tachado</h3>
+
+Para representar un texto tachado en Markdown, escribe dos virgulillas seguidas; después, escribe el texto correspondiente y ciérralo con otras dos virgulillas.
+```
+~~Este texto está tachado.~~ Pero este no.
+```
+<h3>Título</h3>
+Para crear un título en Markdown, se utiliza de forma predeterminada una almohadilla, que se pone delante del texto, separada por un espacio en blanco. Para crear subtítulos y, por lo tanto, en letra más pequeña, se insertan más almohadillas. De esta manera, se pueden crear hasta seis niveles de títulos, como en HTML.
+<br>
+
+```
+# Título 1
+## Título 2
+### Título 3
+#### Título 4
+##### Título 5
+###### Título 6
+```
+<h3>Comillas</h3>
+Para marcar un fragmento de texto como una cita en Markdown, puedes crear las llamadas citas en bloque, utilizando el signo de mayor que (>).
+<br>
+
+Tienes dos opciones: marcar cada línea individual con este carácter o insertar únicamente uno al principio del párrafo de la cita sangrada y marcar el fin de la cita introduciendo una línea en blanco. La cita en bloque, a su vez, puede ser formateada con otros elementos.
+
+```
+>Este es un **fragmento con comillas**.
+>El fragmento continúa aquí.
+
+>Este es otro **fragmento con comillas**.
+Este fragmento continúa en la siguiente línea.
+
+Esta línea ya no está sangrada.
+```
+<h3>Listas</h3>
+Para crear una lista no ordenada en Markdown, puedes utilizar el signo de más, un guion o un asterisco. Con las tres opciones obtendrás el mismo resultado.
+
+```
+- Elemento de la lista 1
+- Elemento de la lista 2
+- Elemento de la lista 3
+```
+Si lo quieres introducir en una lista ordenada lo deberás hacer de la siguiente forma:
+
+```
+1. Elemento de la lista 1
+2. Elemento de la lista 2
+3. Elemento de la lista 3
+```
+Asimismo, Markdown te da la opción de crear listas de verificación, que vienen con casillas que pueden activarse haciendo clic sobre ellas. Si quieres, puedes marcar directamente las casillas al crear la lista. Para ello, utiliza corchetes y una X.
+
+```
+[ ] A
+[x] B
+[ ] C
+
+```
+<h3>Código</h3>
+
+```
+Esto es `código`.
+```
+<h3>Imagenes e Hipervínculos</h3>
+
+```
+A continuación se muestra un [Link](https://ejemplo.com/ "Título opcional del enlace").
+```
+Otra forma de insertar puede ser esta:
+
+```
+<https://ejemplo.com>
+`https://ejemplo.com`
+```
+<h3>Tablas</h3>
+Markdown permite dibujar tablas mediante plecas (|). Cada celda está separada por uno de estos caracteres. Para crear encabezados que se distingan visualmente del resto del contenido, se subrayan las celdas correspondientes con guiones.
+
+```
+|Columna 1|Columna 2|
+|--------|--------|
+|    A    |    B    |
+|    C    |    D    |
+```
 <hr>
 <h2>HTML</h2>
 ## HTML
