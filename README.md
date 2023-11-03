@@ -1,118 +1,97 @@
 # ASIX1M4UF1-APUNTES23-24
+<hr>
+## GITHUB
+<hr>
+## MARKDOWN 
+<hr>
+## HTML
+<hr>
+## CSS
+<hr>
+-¿Que és?
 
+El CSS  es un lenguaje de programación que se utiliza para dar estilo a los documentos HTML y XML. En otras palabras, el CSS se utiliza para definir cómo se deben mostrar los elementos HTML en una página web. Por ejemplo, el CSS se puede utilizar para cambiar el color de fondo de una página, el tamaño y el tipo de letra del texto, la posición de los elementos en la página.</p>
 
-## MARKDOWN (APUNTES)
-(#) <----- Sirve para hacer encabezados hay 6 niveles.
+Para añadir estilos en CSS añadiremos la etiqueta style="">
 
-Este texto esta en *cursiva*
-Este texto esta en *cursiva*
-**Este texto esta en cursiva**
-__Este texto esta en cursiva__
-
-(*) el asterisco sirve para poner la letra en cursiva,tambien serviria si pones (_)
-(**)Dos asteriscos sirven para poner la letra en negrita,tambien serviria si pones(__)
-
-Este texto esta en **_negrita y cursiva_**
-
-1. Primera opción de menú (esto es una lista ordenada)
-2. Segunda opción de menú
-3. Segunda opción de menú
-
-* Primera opción de lista desordenada
-
-* Segunda opcion de lista desordenada
-
-- Tercera opcion de lista desordenada
-   1. Primer Submenú
-   2. Segundo Submenú
-
-- Cuarta  opcion de lista desordenada
-    * Tercer submenú
-    * Cuarto submenú
-+ Quinta opcion de lista desordenada
-
-+ Sexta opcion de lista desordenada
-
-Hay que dejar un espacio en blanco para que siga en otra linea
-
+Por ejemplo para poner un texto de color (rojo en este caso) sería de la siguiente forma:
+<br>
 ```
-<html>
-   <head>
-   </head>
-   <body>
-       <p>Esto es un párrafo</p>
-   </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo1</title>
+</head>
+<body style="color: red;">
+</body>
 </html>
 ```
-(`)simplemente sirve para encuadrar y para que lo que pongas dentro, si es codigo no se ejecute
 
-[Esto es un enlace](http://joan23.fje.edu "Enlace a la web del cole")
-
-[Esto es una imagen del planeta]( https://shre.ink/nvEs  "Titulo Opcional de la imagen")
-
-Primera Col.|Segunda Col.|3 Col|
-|---------------|:------------:|---------|
-|Col 2 es|Centrada|35€|
-|Col 3 es\Derecha\145€|
-|Estilo Cebra|Gris|Blanco|
-|Clase|ASIX1|M4|
-
--[] Opcion A
-
--[x] Opcion B
-
--[] Opcion C
-
-## Segundo Capitulo: HTML (APUNTES)
-### HTML
+Para poner de color el fondo (azul en este caso) sera de la siguiente manera:
 ```
-Etiquetas de apertura y de cierre
-apertura --> <p>  contenido visible </p> <-- cierre
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo2</title>
+</head>
+<body style="background-color:  rgb(0, 0, 255)">
+    
+</body>
+</html>
+```
+Para poner una etiqueta CSS dentro de los elementos del html sería de la siguiente forma:
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            color: blueviolet;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo3</title>
+</head>
+<body>
+    
+</body>
+</html>
+```
+Para poner estilo a elementos especificos utilizamos clases
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo4</title>
+    <style>
+        .textoAzul{
+            color: blue
+        }
+    </style>
+</head>
+<body>
+    <table>
+<tbody>
+<tr class="textoAzul">
+    <td>Hola</td>
+    <td>Hola</td>
+    <td>Hola</td>
+</tr>
 
-Anidar Etiquetas: Meter una etiqueta dentro de otra
+</tbody>
+    </table>
 
-<strong></strong> El contenido que este dentro de strong estara en negrita.
-
-<img href="./imagen">sirve para insertar una imagen
-
-<br> sirve para dejar un espacio en blanco entre lineas
-
-<html lang="idioma deseado">
-
-<meta charset="UTF-8"> se encarga de que por ejemplo caracteres especiales como podria ser la ñ puedan ser renderizados por el codigo
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> se encarga de configurar como se va a ver la pagina web en la pantalla
-
-<title>Document</title> Es el titulo de la pagina web 
-
-<h1></h1> Define un encabezado tiene 6 niveles
-`````
--Cuerpo (body) Aqui se pone todo el contenido de la pagina visible por los visitantes de la pagina web
-
-
--Encabezado (head) Contenido no visible para los visitantes de la pagina,normalmente es donde definimos las caracteristicas de la pagina
-
-Cada nuevo archivo que abras en Visual Studio tienes que especificar que lenguaje vas a utilizar, en caso de html le daremos a nuevo archivo y escribiremos html:5
-
-Hay dos categorias de etiquetas:
--Etiquetas De Bloque
-Algunos ejemplos pueden ser titulo,parrafo,listas,tablas.
-
--Etiquetas De Linea:
-Cuando se acaba de renderizar la etiqueta deja un salto de linea
-
-<ol> -> lista ordenada (cada elemento que este en la lista esta anidado en un li (item list))
-
-<ol>
-<li> Primer elemento</li>
-<li> Segundo elemento</li>
-<li> Tercer elemento</li>
-</ol>
-
-ul-> lista desordenada (solo varia el formato)
-
-<ul>
-<li> Primer elemento</li>
-<li> Segundo elemento</li>
-<li> Tercer elemento</li>
-</ul>
+    
+</body>
+</html>
+```
+CUIDADO!! Las etiquetas de CSS van en orden descendente, es decir si pones una etiqueta
+CSS para poner el texto en rojo, y luego pones una etiqueta para poner el texto en azul 
+se aplicara la ultima etiqueta puesta.
