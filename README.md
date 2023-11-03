@@ -1,6 +1,136 @@
 # ASIX1M4UF1-APUNTES23-24
 <hr>
 ## GITHUB
+<br>
+-¿Que és?
+GitHub es una plataforma en línea que permite a desarrolladores y equipos de programación colaborar en proyectos de software. Permite el almacenamiento, seguimiento de cambios, gestión de versiones y colaboración en código fuente de manera eficiente, lo que facilita el desarrollo y la colaboración en proyectos de programación.
+<br>
+<br>
+Creación de una cuenta de GitHub:
+
+Abre tu navegador web y ve a https://github.com.
+Haz clic en el botón "Sign up" (Registrarse) en la esquina superior derecha.
+Rellena el formulario con tu nombre de usuario, dirección de correo electrónico y contraseña.
+Sigue las instrucciones para verificar tu dirección de correo electrónico.
+Después de verificar tu correo electrónico, tu cuenta de GitHub estará lista.
+Instalación de Git:
+
+Descarga Git desde https://git-scm.com/downloads e instálalo en tu sistema. Asegúrate de seleccionar las opciones recomendadas durante la instalación.
+Abre una terminal (en Windows, puedes usar Git Bash que se instala junto con Git) y verifica que Git se haya instalado correctamente escribiendo git --version. Deberías ver la versión de Git que has instalado.
+Instalación de Visual Studio Code (VSC):
+
+Ve a https://code.visualstudio.com/ y descarga la versión adecuada para tu sistema operativo (Windows, macOS o Linux).
+Instala Visual Studio Code siguiendo las instrucciones del instalador.
+Abre Visual Studio Code después de la instalación.
+Ahora, con GitHub, Git y Visual Studio Code instalados, estás listo para comenzar a colaborar en proyectos de desarrollo de software, gestionar el control de versiones y escribir código. Puedes clonar repositorios de GitHub en tu máquina local, realizar cambios, confirmarlos y enviarlos de nuevo a GitHub para colaborar con otros desarrolladores.
+
+Formas de crear un repositorio en GitHub
+<br>
+A través del sitio web de GitHub:
+
+Inicia sesión en tu cuenta de GitHub en https://github.com.
+En la página principal de tu perfil, haz clic en el botón "New" (Nuevo) en la esquina superior derecha.
+Llena la información requerida, como el nombre del repositorio, una descripción opcional y otras configuraciones como la visibilidad (público o privado).
+Puedes elegir agregar un archivo "README" al repositorio y seleccionar una licencia.
+Haz clic en el botón "Create repository" (Crear repositorio) para finalizar la creación.
+<br>
+
+A través del sitio web de GitHub:
+
+Inicia sesión en tu cuenta de GitHub en https://github.com.
+En la página principal de tu perfil, haz clic en el botón "New" (Nuevo) en la esquina superior derecha.
+Llena la información requerida, como el nombre del repositorio, una descripción opcional y otras configuraciones como la visibilidad (público o privado).
+Puedes elegir agregar un archivo "README" al repositorio y seleccionar una licencia.
+Haz clic en el botón "Create repository" (Crear repositorio) para finalizar la creación.
+<br>
+```
+git init           
+# Inicializa un repositorio Git local
+
+git add .           
+# Agrega todos los archivos al área de preparación
+
+git commit -m "Primer commit"  
+# Confirma los archivos con un mensaje
+
+git branch -M main  # Cambia la rama por defecto a "main"
+
+git remote add origin https://github.com/tu-usuario/nombre-repositorio.git  
+# Agrega la URL de tu repositorio remoto
+
+git push -u origin main  
+# Sube el repositorio local a GitHub
+```
+Reemplaza "tu-usuario" con tu nombre de usuario de GitHub y "nombre-repositorio" con el nombre que quieras para tu repositorio.
+
+Estas son las dos formas principales de crear un repositorio en GitHub, ya sea a través del sitio web o utilizando Git en tu sistema local.
+
+Abre una terminal o línea de comandos en tu computadora.
+
+Navega a la carpeta en la que deseas clonar el repositorio. Puedes hacerlo con el comando cd para cambiar al directorio adecuado.
+
+Ve al repositorio en GitHub que deseas clonar. Copia la URL del repositorio desde la página del repositorio en GitHub. Debería verse algo así como "https://github.com/tu-usuario/nombre-repositorio.git". Asegúrate de reemplazar "tu-usuario" y "nombre-repositorio" con la información real.
+
+En la terminal, utiliza el comando git clone seguido de la URL del repositorio que copiaste en el paso anterior. Por ejemplo:
+
+```
+git clone https://github.com/tu-usuario/nombre-repositorio.git
+
+```
+<h3>Activacion de GitHub Pages</h3>
+<br>
+Para activar GitHub Pages, que es un servicio que te permite publicar sitios web directamente desde un repositorio de GitHub, sigue estos pasos:
+
+Tener un repositorio en GitHub:
+Asegúrate de tener un repositorio en GitHub que contenga el código de tu sitio web o los archivos que deseas publicar. Si aún no tienes un repositorio, crea uno y sube tus archivos a él.
+
+Ir a la configuración del repositorio:
+
+Abre tu repositorio en GitHub.
+En la barra de navegación de tu repositorio, haz clic en la pestaña "Settings" (Configuración).
+Desplázate hacia abajo hasta la sección "GitHub Pages":
+
+En la página de configuración del repositorio, desplázate hacia abajo hasta la sección "GitHub Pages."
+Selecciona una fuente:
+
+En la sección "Source" (Fuente), elige la rama de tu repositorio que contiene el código de tu sitio web. Puede ser la rama principal ("main" o "master") o cualquier otra rama que prefieras.
+Si estás creando un sitio web desde cero, asegúrate de que tengas un archivo HTML llamado "index.html" en la raíz de tu repositorio. GitHub Pages utilizará este archivo como página principal de tu sitio web.
+Guardar la configuración:
+
+Después de seleccionar la fuente, se guardará automáticamente la configuración. GitHub Pages generará una URL pública para tu sitio web. Esta URL será visible en la sección "GitHub Pages" de la página de configuración.
+Acceder a tu sitio web:
+
+Una vez que GitHub Pages haya terminado de generar tu sitio web, podrás acceder a él a través de la URL proporcionada. Esta URL tendrá un formato similar a: https://tu-usuario.github.io/tu-repositorio.
+Personalizar tu dominio (opcional):
+
+Si deseas utilizar tu propio dominio personalizado en lugar de la URL predeterminada de GitHub Pages, puedes configurarlo en la sección "Custom domain" (Dominio personalizado) de la página de configuración.
+Gestionar y actualizar tu sitio web:
+
+A partir de este punto, cualquier cambio que realices en tu repositorio (como la actualización de archivos HTML, CSS, o imágenes) se reflejará automáticamente en tu sitio web de GitHub Pages.
+¡Tu sitio web debería estar activo y accesible a través de la URL proporcionada por GitHub Pages! Asegúrate de revisar y personalizar la configuración de tu sitio web según tus necesidades.
+
+<h3>Importancia de un index.html dentro del Visual Studio Code</h3>
+<br>
+El archivo index.html es importante en el contexto de desarrollo web y Visual Studio Code por varias razones:
+
+Página de inicio por defecto: En el desarrollo web, el archivo index.html es generalmente la página de inicio o "página principal" de un sitio web. Cuando los navegadores web acceden a un directorio en un servidor web o en tu sistema local, buscan automáticamente un archivo llamado index.html para mostrar como la primera página. Esto significa que cuando accedes a un sitio web, como https://www.ejemplo.com/, el navegador busca y carga el index.html en ese directorio.
+
+Convención estándar: Utilizar index.html como nombre para la página de inicio es una convención ampliamente aceptada en el desarrollo web. Esta convención hace que sea más fácil para los desarrolladores y los servidores web identificar cuál es el archivo principal que se debe cargar cuando se accede a un directorio.
+
+Facilita la organización: Al mantener un archivo index.html, puedes establecer la estructura básica de tu página web y enlazar a otros recursos (como hojas de estilo CSS, scripts JavaScript, imágenes, etc.) desde allí. Esto ayuda a mantener una estructura organizada en tu proyecto y hace que sea más sencillo entender la jerarquía de tus archivos.
+
+SEO y navegación: Los motores de búsqueda y los usuarios tienden a esperar que la página de inicio de un sitio web se llame index.html. Mantener esta convención puede ayudar a mejorar la indexación y la navegación de tu sitio web.
+
+Compatibilidad: La mayoría de los servidores web y servicios de alojamiento web respetan esta convención y configuran automáticamente la carga de index.html. Además, muchas herramientas y frameworks del lado del servidor también esperan encontrar un archivo index.html como punto de entrada para la generación de contenido web dinámico.
+
+En resumen, tener un archivo index.html en tu proyecto de desarrollo web es una práctica estándar que facilita la navegación, la organización y la compatibilidad con herramientas y servicios, lo que hace que sea una elección importante en el desarrollo web y en Visual Studio Code.
+
+
+
+
+
+
+
 <hr>
 ## MARKDOWN 
 -¿Que és?
