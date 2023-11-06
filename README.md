@@ -419,3 +419,8 @@ Para poner estilo a elementos especificos utilizamos clases
 CUIDADO!! Las etiquetas de CSS van en orden descendente, es decir si pones una etiqueta
 CSS para poner el texto en rojo, y luego pones una etiqueta para poner el texto en azul 
 se aplicara la ultima etiqueta puesta.
+
+Para linkear los css a tus documentos html se hacen de la siguiente forma
+```
+<link rel="stylesheet" href="style.css" type="text/css"
+```
