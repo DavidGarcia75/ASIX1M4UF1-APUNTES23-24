@@ -424,3 +424,137 @@ Para linkear los css a tus documentos html se hacen de la siguiente forma
 ```
 <link rel="stylesheet" href="style.css" type="text/css"
 ```
+<h2>Tipos de selectores CSS</h2>
+
+```
+Selector Universal (*): Selecciona todos los elementos de la página.
+
+
+* {
+  /* Estilos aplicados a todos los elementos */
+```
+
+```
+}
+Selector de Tipo: Selecciona todos los elementos de un tipo específico.
+```
+
+```
+p {
+  /* Estilos aplicados a todos los párrafos */
+}
+Selector de Clase (.): Selecciona elementos con un nombre de clase específico.
+```
+
+```
+.mi-clase {
+  /* Estilos aplicados a elementos con la clase "mi-clase" */
+}
+Selector de ID (#): Selecciona un elemento con un ID específico.
+```
+
+```
+#mi-id {
+  /* Estilos aplicados al elemento con el ID "mi-id" */
+}
+Selector de Descendencia (espacio): Selecciona un elemento que es descendiente de otro.
+```
+
+```
+div p {
+  /* Estilos aplicados a todos los párrafos dentro de un div */
+}
+Selector de Descendencia Directa (> ): Selecciona un elemento que es un hijo directo de otro.
+```
+
+```
+div > p {
+  /* Estilos aplicados a los párrafos directamente dentro de un div */
+}
+```
+
+```
+Selector de Atributo ([atributo]): Selecciona elementos con un atributo específico.
+```
+
+```
+input[type="text"] {
+  /* Estilos aplicados a los input de tipo texto */
+}
+Selector de Pseudoclase (:): Selecciona un estado específico del elemento.
+```
+
+```
+a:hover {
+  /* Estilos aplicados cuando el enlace es hovered (sobre él) */
+}
+Selector de Pseudoelemento (::): Selecciona partes específicas de un elemento.
+```
+
+```
+p::first-line {
+  /* Estilos aplicados a la primera línea de un párrafo */
+}
+Selector de Grupo (,): Permite agrupar varios selectores para aplicar los mismos estilos a múltiples elementos.
+```
+
+```
+h1, h2, h3 {
+  /* Estilos aplicados a los encabezados h1, h2 y h3 */
+}
+```
+
+<h2>DIV en HTML</h2>
+
+Div en HTML: Estructurando Contenido de Manera Versátil
+En HTML, el elemento <div> se erige como un pilar fundamental para la estructuración y organización de contenido en páginas web. Este elemento, carente de significado semántico propio, brinda una versatilidad excepcional al actuar como un contenedor genérico. A continuación, se exploran diversas facetas de los
+ <div> en HTML.
+
+1. Propósito Fundamental del <div>
+El <div> se presenta como un lienzo en blanco, permitiendo a los crear  secciones específicas del contenido. Su principal función radica en agrupar elementos relacionados, facilitando así la aplicación de estilos y la manipulación.
+
+2. Anidación 
+La capacidad de anidar <div> crea una jerarquía estructurada, posibilitando la creación de diseños complicados. Este enfoque jerárquico resulta esencial para construir interfaces web sólidas y fácilmente mantenibles.
+
+```
+<div class="contenedor-principal">
+  <div class="encabezado">...</div>
+  <div class="contenido">
+    <div class="seccion">...</div>
+    <div class="seccion">...</div>
+  </div>
+  <div class="pie-de-pagina">...</div>
+</div>
+```
+
+3. Identificar con Clases y IDs
+La asignación de clases y IDs a los <div> otorga una identidad única o compartida. Las clases posibilitan la aplicación de estilos a múltiples elementos, mientras que los IDs ofrecen una referencia específica, fasi facilitamos dar formato en CSS
+
+```
+<div class="contenedor" id="seccion-principal">
+  <!-- Contenido aquí -->
+</div>
+```
+
+```
+.contenedor-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+```
+
+5. Consideraciones para un HTML Semántico
+Aunque los <div> son herramientas poderosas, se recomienda complementar su uso con etiquetas cuando sea posible. Esto sirve para ayudar a la busqueda e investigacion de clases.
+
+```
+<header>
+  <h1>Título de la Página</h1>
+</header>
+<section>
+  <h2>Sección Principal</h2>
+  <p>Contenido informativo.</p>
+</section>
+```
+
+En resumen el div en HTML sirve para mejorar el formato y la adaptabilidad de las paginas web para insertar mas items dentro de ella y mejorar la visibilidad de la pagina.
